@@ -16,9 +16,9 @@ def collatz(number):
 if __name__ == "__main__":
 
     try:
-        user =int(input("Enter number:"))
+        user = int(input("Enter number:"))
         result = collatz(user)
         while (result != 1):
             result = collatz(result)
     except ValueError:
-        print("number must be an inter")
+        print("number must be an integer")
